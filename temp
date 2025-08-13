@@ -1,0 +1,16 @@
+{
+  "name": "Data Exploration & Analysis",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11-bullseye",
+  "postCreateCommand": "pip install --no-cache-dir -r /workspaces/${containerWorkspaceFolder}/requirements.txt",
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "jupyter.jupyterServerType": "local"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-python.vscode-pylance"
+  ],
+  "forwardPorts": [8888],
+  "remoteUser": "vscode"
+}
