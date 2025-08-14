@@ -1,69 +1,77 @@
-# Project-0: Data Cleaning & Preparation
+---
 
-This project focuses on the foundational step of any data science workflow — cleaning and preparing raw datasets for analysis.
-The goal is to transform messy, incomplete, or inconsistent data into a well-structured format that can be easily explored and visualized in later stages.
-It covers detecting and handling missing values, removing duplicates, fixing inconsistent formats, and ensuring the dataset is ready for deeper analysis.
+# **Project-0: Data Cleaning & Exploratory Data Analysis (EDA)**
+
+This project covers the **first two critical stages** of any data science workflow —
+**Data Cleaning & Preparation** and **Exploratory Data Analysis (EDA)**.
+
+The goal is to transform messy, incomplete, or inconsistent datasets into a clean, structured format,
+and then extract **initial insights** through visual and statistical exploration.
 
 ---
 
-## Table of Contents
+## **Table of Contents**
 
-1. [Overview](#overview)  
-2. [Why This Project?](#why-this-project)  
-3. [Features](#features)  
-4. [Requirements](#requirements)  
-5. [Installation](#installation)  
-6. [Usage](#usage)  
-7. [Project Structure](#project-structure)  
-8. [License](#license)  
-
----
-
-## Overview
-
-This project demonstrates **best practices for preparing raw datasets for analysis**, including:
-
-- Cleaning and preprocessing messy or inconsistent data  
-- Handling missing values, redundant data, and incorrect entries  
-- Numerization and discretization of variables  
-- Exploratory data analysis (EDA)  
-- Data visualization for actionable insights  
-
-The project ensures reproducibility and a consistent development environment using **DevContainers**.
+1. [Overview](#overview)
+2. [Why This Project?](#why-this-project)
+3. [Features](#features)
+4. [Requirements](#requirements)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Project Structure](#project-structure)
+8. [EDA Summary](#eda-summary)
+9. [License](#license)
 
 ---
 
-## Why This Project?
+## **Overview**
 
-Real-world data is rarely clean or consistent. This portfolio demonstrates techniques to:
+This project demonstrates **best practices for cleaning, preparing, and exploring datasets**, including:
 
-- Identify and handle missing or incorrect values  
-- Standardize and transform data formats  
-- Detect and remove redundant or duplicate data  
-- Transform variables for analysis using numerization and discretization  
-- Generate visual insights to support data-driven decisions  
+* Handling **missing values** (imputation/removal)
+* Removing **duplicates** & fixing **inconsistent formats**
+* Encoding categorical variables (**numerization/discretization**)
+* Performing **exploratory data analysis (EDA)** for initial insights
+* Creating **visualizations** to uncover trends and patterns
 
-This makes it a great showcase for data cleaning, exploration, and visualization workflows.
-
----
-
-## Features
-
-- Comprehensive **data cleaning workflow**  
-- Handling **redundant data, numerization, and discretization**  
-- Exploratory data analysis with **Python and Jupyter notebooks**  
-- Data visualization using **Matplotlib, Seaborn, and Plotly**  
-- **Containerized development environment** for reproducibility (DevContainers + Docker)  
+The entire workflow is **reproducible** via a **DevContainer** setup, ensuring a consistent environment.
 
 ---
 
-## Requirements
+## **Why This Project?**
 
-- **Docker Desktop** installed  
-- **VS Code** with **Remote - Containers** extension  
-- **Python 3.8+** (inside DevContainer)  
+Real-world datasets are often:
 
-Dependencies (auto-installed via DevContainer):
+* Incomplete (missing values)
+* Inconsistent (mixed formats, typos)
+* Redundant (duplicate entries)
+* Unstructured for analysis
+
+This project serves as a **portfolio-ready example** to show:
+
+* **Data preparation skills** — cleaning, transforming, and standardizing data
+* **EDA skills** — identifying patterns, correlations, and outliers
+* **Visualization skills** — making insights clear and actionable
+
+---
+
+## **Features**
+
+* **Comprehensive cleaning pipeline** — missing values, duplicates, formatting
+* **Feature transformation** — numerization, discretization, scaling
+* **EDA workflow** — univariate, bivariate, and multivariate analysis
+* **Data visualization** — Matplotlib, Seaborn, Plotly
+* **Reproducibility** — DevContainers + Docker setup
+
+---
+
+## **Requirements**
+
+* **Docker Desktop** installed
+* **VS Code** with **Remote - Containers** extension
+* **Python 3.8+** (inside DevContainer)
+
+**Dependencies** (auto-installed in DevContainer):
 
 ```bash
 pandas
@@ -74,13 +82,13 @@ plotly
 jupyterlab
 notebook
 scikit-learn
-````
+```
 
 ---
 
-## Installation
+## **Installation**
 
-1. **Clone the repository:**
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/yourusername/Data-Exploration-Portfolio.git
@@ -89,10 +97,10 @@ cd Data-Exploration-Portfolio
 
 2. **Open in VS Code**
 
-* VS Code should prompt: **“Reopen in Container” → Click it**
-* The DevContainer will build and install all dependencies automatically
+   * When prompted: **“Reopen in Container”** → Click it
+   * All dependencies will be installed automatically
 
-3. **Alternative without container (optional):**
+3. **Optional (without container)**:
 
 ```bash
 pip install -r requirements.txt
@@ -100,27 +108,28 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
+## **Usage**
 
-1. Open a terminal in VS Code (inside the DevContainer).
-2. Launch Jupyter Lab:
+1. Open terminal in VS Code (inside DevContainer)
+2. Start Jupyter Lab:
 
 ```bash
 jupyter lab --ip=0.0.0.0 --no-browser --allow-root
 ```
 
-3. Copy the URL with the token from the terminal and open it in your browser.
-4. Open your notebook (e.g., `Data-Cleaning.ipynb`) and run cells step by step.
+3. Copy the URL with the token from the terminal into your browser
+4. Open `Data Cleaning And Visualising.ipynb` or `EDA.ipynb` and run step-by-step
 
 ---
 
-## Project Structure
+## **Project Structure**
 
 ```bash
 Data-Exploration-Portfolio/
 ├── .devcontainer/        # DevContainer configuration
 ├── notebooks/            # Jupyter notebooks
-│   └── Data-Cleaning.ipynb
+│   ├── Data-Cleaning.ipynb
+│   └── EDA.ipynb
 ├── data/                 # Sample datasets (if included)
 ├── requirements.txt      # Python dependencies
 └── README.md             # Project documentation
@@ -128,22 +137,25 @@ Data-Exploration-Portfolio/
 
 ---
 
-## License
+## **EDA Summary**
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+After cleaning, the dataset underwent **Exploratory Data Analysis (EDA)** to uncover patterns and insights.
+
+**Key Findings:**
+
+* **Data Quality Improved** — missing values handled, formats standardized, duplicates removed
+* **Distributions** — identified skewed features requiring transformation
+* **Correlations** — detected strong relationships between key variables
+* **Outliers** — flagged and examined for potential data entry errors or valid extreme values
+* **Visual Insights** — trends, category breakdowns, and comparison charts revealed business-relevant information
+
+**Conclusion:**
+The dataset is now clean, consistent, and well-understood, making it ready for **deeper statistical modeling or machine learning**.
 
 ---
 
-## Final Notes
+## **License**
 
-This repository is a **complete showcase of a data science workflow**:
+Licensed under the **MIT License** – see the [LICENSE](LICENSE) file.
 
-* You can explore real-world data cleaning challenges
-* Practice **data transformation techniques**
-* Generate **visual insights**
-* Run the project consistently in a **containerized environment**
-
-It’s ideal for learning, portfolio demonstrations, or sharing best practices with others in the data science community.
-
-
-
+---
