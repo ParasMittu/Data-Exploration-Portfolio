@@ -1,6 +1,8 @@
-# Data-Exploration-Portfolio
+# Project-0: Data Cleaning & Preparation
 
-A comprehensive portfolio demonstrating end-to-end data science workflows—from cleaning and handling redundant data to numerization, discretization, exploratory data analysis, and insightful visualizations. Built with Python and Jupyter notebooks, and containerized using DevContainers for a consistent and reproducible development environment.
+This project focuses on the foundational step of any data science workflow — cleaning and preparing raw datasets for analysis.
+The goal is to transform messy, incomplete, or inconsistent data into a well-structured format that can be easily explored and visualized in later stages.
+It covers detecting and handling missing values, removing duplicates, fixing inconsistent formats, and ensuring the dataset is ready for deeper analysis.
 
 ---
 
