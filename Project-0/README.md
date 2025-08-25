@@ -1,5 +1,3 @@
----
-
 # Project-0: Data Cleaning, Exploratory Data Analysis (EDA) & Financial Dashboard
 
 This project represents the **foundational step** of my data science journey. Before diving into advanced machine learning or predictive modeling, the most crucial stage is always **data preparation and exploration**.
